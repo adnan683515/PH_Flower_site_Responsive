@@ -1,13 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     max-width: 1400px;
     margin: auto;
 }
-header{
+
+header {
 
     display: flex;
     flex-direction: row;
@@ -18,25 +19,25 @@ header{
     background-color: rgb(230, 214, 227);
 }
 
-header > div{
-    width:300px;
+header>div {
+    width: 300px;
     line-height: 20px;
 }
 
-.title{
+.title {
     font-size: 24px;
     margin-bottom: 10px;
     line-height: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.lorem{
+.lorem {
     font-size: 15px;
     color: rgb(90, 88, 88);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.shope{
+.shope {
     margin-top: 9px;
     background-color: rgb(242, 39, 168);
     padding: 10px;
@@ -44,20 +45,90 @@ header > div{
     border-radius: 5px;
 }
 
-header img{
+header img {
     width: 100%;
 }
 
+
+
+.Flower_Section img {
+    width: 50%;
+}
+
+.Three_flower {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+
+
+.Flower_Section {
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.First_flower_div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    border-radius: 80% 80% 0 0;
+}
+.Three_flower > div{
+    flex: 1;
+}
+.first_flower{
+    background-color: rgb(221, 165, 200);
+}
+.seconde_flower{
+    background-color: rgb(212, 225, 227);
+}
+.third_flower{
+    background-color: rgb(193, 218, 142);
+}
+.flower_text{
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+.flower_text > h4{
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 @media screen and (max-width: 576px) {
-    
-    header{
+
+    header {
         flex-direction: column;
         height: 95vh;
-    
-    
+        justify-content: space-between;
+
+
     }
-    header > div{
-        width:200px;
+
+
+    header>div {
+        width: 200px;
         line-height: 20px;
+    }
+
+    .header_text_div,.flower_text {
+        text-align: center;
+    }
+    .Three_flower{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .seconde_flower{
+        padding-top: 70px;
+        padding-bottom: 50px;
     }
 }
