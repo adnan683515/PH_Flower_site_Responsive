@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    max-width: 1400px;
+    margin: auto;
+}
+header{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    justify-content: space-around;
+    height: 70vh;
+    background-color: rgb(230, 214, 227);
+}
+
+header > div{
+    width:300px;
+    line-height: 20px;
+}
+
+.title{
+    font-size: 24px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.lorem{
+    font-size: 15px;
+    color: rgb(90, 88, 88);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.shope{
+    margin-top: 9px;
+    background-color: rgb(242, 39, 168);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+header img{
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    
+    header{
+        flex-direction: column;
+        height: 95vh;
+    
+    
+    }
+    header > div{
+        width:200px;
+        line-height: 20px;
+    }
+}
