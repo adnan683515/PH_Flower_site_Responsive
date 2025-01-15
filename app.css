@@ -44,7 +44,45 @@ header>div {
     border: none;
     border-radius: 5px;
 }
+.Hot_deal_section{
+    margin-top:50px;
+    margin-bottom: 20px;
+    background-color: rgb(254, 233, 246);
+    border-radius: 10px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
 
+.Hot_deal_section img{
+    width: 80%;
+}
+.Hot_deal_section > div{
+    text-align: center;
+    line-height: 20px;
+}
+.Hot_deal_section h2{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 15px 0;
+}
+.Hot_deal_section button{
+    margin-top: 9px;
+    background-color: rgb(242, 39, 168);
+    padding: 17px;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+}
+.Hot_deal_section p{
+    color: rgb(62, 59, 59);
+    font-weight: 500;
+    margin: 10px 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
 header img {
     width: 100%;
 }
@@ -65,6 +103,8 @@ header img {
     background-color: rgb(244, 241, 241);
     border-radius: 10px;
     display: flex;
+    width: 75%;
+    margin: auto;
     justify-content: space-evenly;
     align-items: center;
     height: 300px;
@@ -155,10 +195,20 @@ header img {
         width: 200px;
         line-height: 20px;
     }
+    .Hot_deal_section{
+        height: 86vh;
+        flex-direction: column;
+        padding: 20px 0;
+        gap: 50px 0 ;
+    }
+    .Hot_deal_section h2 ,  p{
+        font-size: 16px;
+    }
     .DeliverManSection{
         flex-direction: column;
         height: 70vh;
         gap: 20px;
+        padding: 30px;
     }
     .header_text_div,
     .flower_text {
