@@ -61,8 +61,28 @@ header img {
     gap: 10px;
 }
 
+.DeliverManSection{
+    background-color: rgb(244, 241, 241);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 300px;
+    margin-bottom: 20px;
+}
 
+.DeliverManSection > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
+    justify-content: center;
+    align-items: center;
+}
+.DeliverManSection p{
+    color: rgb(68, 66, 66);
+    font-family: sans-serif;
+}
 .Flower_Section {
     width: 75%;
     margin: auto;
@@ -82,24 +102,35 @@ header img {
     padding-top: 50px;
     border-radius: 80% 80% 0 0;
 }
-.Three_flower > div{
+
+.Three_flower>div {
     flex: 1;
 }
-.first_flower{
+
+.first_flower {
     background-color: rgb(221, 165, 200);
 }
-.seconde_flower{
+
+.seconde_flower {
     background-color: rgb(212, 225, 227);
 }
-.third_flower{
+
+.third_flower {
     background-color: rgb(193, 218, 142);
 }
-.flower_text{
+
+.flower_text {
     text-align: center;
     line-height: 30px;
     font-size: 20px;
 }
-.flower_text > h4{
+
+.pnk_flower_tee {
+    display: flex;
+    gap: 230px;
+}
+
+.flower_text>h4 {
     font-size: 30px;
     margin-bottom: 10px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -115,19 +146,30 @@ header img {
 
     }
 
+    .pnk_flower_tee {
+        flex-direction: column;
+        gap: 20px;
+    }
 
     header>div {
         width: 200px;
         line-height: 20px;
     }
-
-    .header_text_div,.flower_text {
+    .DeliverManSection{
+        flex-direction: column;
+        height: 70vh;
+        gap: 20px;
+    }
+    .header_text_div,
+    .flower_text {
         text-align: center;
     }
-    .Three_flower{
-        grid-template-columns: repeat(1,1fr);
+
+    .Three_flower {
+        grid-template-columns: repeat(1, 1fr);
     }
-    .seconde_flower{
+
+    .seconde_flower {
         padding-top: 70px;
         padding-bottom: 50px;
     }
