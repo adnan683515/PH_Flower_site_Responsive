@@ -277,9 +277,67 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(rgb(0, 0, 0),rgb(49, 39, 39));
+    background: linear-gradient(rgb(0, 0, 0),rgb(46, 36, 36));
+}
+.about{
+    padding: 9px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+    border-radius: 5px;
+    position: sticky;
+    top: 1px;
+    padding: 15px;
+    background-color: rgb(192, 145, 210);
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    list-style: none;
+}
+nav h1{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav li{
+    font-size: 21px;
+}
+nav li:hover{
+    color: rgb(236, 236, 236);
+    cursor: pointer;
+}
+.logout{
+    background-color: rgb(238, 66, 223);
+    padding: 9px;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+
+}
+.profile{
+    background-color: rgb(47, 184, 47);
+    padding: 9px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.profile:hover{
+    background-color:rgb(238, 66, 223) ;
+}
+.logout:hover{
+    background-color: crimson;
+}
+
+button{
+    cursor: pointer;
+    
+}
 
 .footer_section div{
     text-align: center;
@@ -332,9 +390,17 @@ footer small{
         font-size: 26px;
 
     }
-    .pnk_flower_tee {
+    .pnk_flower_tee,nav {
         flex-direction: column;
         gap: 20px;
+    }
+    nav ul{
+        gap: 10px;
+    }
+    nav{
+        position: sticky;
+        top: -10px;
+        margin-top: 0;
     }
     .Suscribe_Section{
         height: 30vh;
